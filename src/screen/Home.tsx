@@ -119,6 +119,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: "#D45D79",
     },
+    forgotContainer:{
+
+    },
     logConatiner: {
         height: 45,
         backgroundColor: "#D45D79",
