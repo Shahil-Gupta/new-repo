@@ -10,22 +10,16 @@ import Project from './src/screen/ProjectFile';
 import Service from './src/screen/UpdateService';
 import Login from './src/screen/Login';
 import File from './src/screen/File';
+import User from './src/screen/Users';
 
 const Stack = createNativeStackNavigator();  // ✅ Correct
 
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Project" component={Project} />
-        <Stack.Screen name="Service" component={Service} />
-        <Stack.Screen name="File" component={File} 
-        options={{title:"Choose a Subcategory"}}/>
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaView style={{flex:1 ,backgroundColor:"white"}}>
+      <User/>
+    </SafeAreaView>
   );
 }
 
